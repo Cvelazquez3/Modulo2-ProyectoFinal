@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(182, 155, 124);
+}
+
+.nav-links{
+    /*Quitar viñetas*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li{
+    margin-left: 20px;
+}
+
+.nav-links li a{
+    color:black; /*Cambiar color de enlaces*/
+    text-decoration: none; /*Quitar subrayado*/
+}
+/*Estilos de la seccion hero*/
+.hero{
+    background-image: url("https://www.65ymas.com/uploads/s1/67/46/21/bigstock-spoon-with-coffee-grounds-and-418366237.jpeg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    padding: 100px 0;
+    
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(255, 255, 255);
+}
+
+.hero h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contenedor-boton{
+    padding-top: 35px;
+}
+
+.boton-menu{
+    margin: 15px;
+    padding: 5px;
+    background-color: brown;
+    color:aliceblue;
+
+}
+
+/*Seccion de productos*/
+.featured-products, .postres, .equipo{
+    padding: 50px;
+    text-align: center;
+}
+
+.product-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.product img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/*Seccion de postres*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*Responsive*/
+    gap: 30px; /*espaciado*/
+}
+
+.postre img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/*Seccion de personal*/
+.equipo{
+    background-color: antiquewhite;
+}
+.equipo-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.miembro{
+    width: 200px;
+    margin-bottom: 35px;
+}
+.miembro img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/*Estilos del pie de pagina*/
+footer{
+    background-color: rgb(182, 155, 124);
+    color:rgb(235, 235, 235);
+    text-align: center;
+    padding: 10px 0;
+}
