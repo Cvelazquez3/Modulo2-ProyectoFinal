@@ -4,48 +4,91 @@
 }
 
 body{
-    font-family: 'Lucida Sans', sans-serif;
+    background-color: rgb(217, 203, 184);
+    font-family: "PT Serif", serif;
 }
-
-.navbar{
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+.navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(182, 155, 124);
+    align-items: center; /* Centrar verticalmente todos los elementos */
+    padding: 0px 5px 5px 0px;
+    background-color:  #525239;
 }
 
-.nav-links{
-    /*Quitar viñetas*/
-    list-style: none;
+.logo {
+    display: flex; /* Organizar logo en fila */
+    align-items: center; /* Centrar verticalmente imagen y texto */
+}
+
+.logo img {
+    width: 60px; /* Tamaño de la imagen del logo */
+    height: auto; /* Mantener proporciones */
+    margin-top: 3px;
+    margin-left: 9px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Añadir transición */
+}
+.logo img:hover{
+    transform: scale(1.1); /* Agrandar al pasar el cursor */
+}
+
+.nav-links {
+    list-style: none; /* Quitar viñetas */
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; /* Colocar los enlaces en fila */
 }
 
-.nav-links li{
-    margin-left: 20px;
+.nav-links li {
+    margin-left: 20px; /* Espaciado entre enlaces */
 }
 
-.nav-links li a{
-    color:black; /*Cambiar color de enlaces*/
-    text-decoration: none; /*Quitar subrayado*/
+.nav-links li a {
+    color: black; /* Cambiar color de enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    transition: color 0.3s ease; /* Transición para hover */
+}
+
+.nav-links li a:hover {
+    color: #ccc2ad; /* Cambiar color al pasar el cursor */
 }
 /*Estilos de la seccion hero*/
 .hero{
-    background-image: url("https://www.65ymas.com/uploads/s1/67/46/21/bigstock-spoon-with-coffee-grounds-and-418366237.jpeg");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/028/216/975/non_2x/light-coffee-break-ambiance-free-photo.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
     color:rgb(255, 255, 255);
-    padding: 100px 0;
-    
+    padding: 160px 0;
 }
+
 .hero-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:rgb(255, 255, 255);
 }
 
 .hero h2{
@@ -54,20 +97,28 @@ body{
 }
 
 .contenedor-boton{
-    padding-top: 35px;
+    padding-top: 50px;
 }
 
-.boton-menu{
+.boton-menu {
     margin: 15px;
-    padding: 5px;
-    background-color: brown;
-    color:aliceblue;
-
+    padding: 9px;
+    background-color: rgb(70, 69, 59);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Añadir transición */
 }
+
+.boton-menu:hover {
+    background-color: rgb(105, 103, 81);
+    transform: scale(1.1); /* Agrandar al pasar el cursor */
+}
+
+
 
 /*Seccion de productos*/
 .featured-products, .postres, .equipo{
-    padding: 50px;
+    padding: 60px;
     text-align: center;
 }
 
@@ -80,13 +131,34 @@ body{
 .product{
     width: 300px;
     margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #e4e4d3;
+    border-radius: 50px;
+    transition: transform 1s ease, background-color 0.3s ease; /* Añadir transición */
 }
-
+.product:hover{
+    /* Agrandar al pasar el cursor */ transform: scale(1.2);
+}
 .product img{
-    width:100%;
+    width:70%;
     height: 200px;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin: 30px 10px 20px 10px;
+}
+.product img:hover{
+    transform: scale(1.05);
+    transform: rotate(3deg);
+}
+.product h3{
+    background-color:  #898969;
+}
+.product p{
+    background-color:  #898969;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.postres h2{
+    margin-bottom: 30px;
 }
 
 /*Seccion de postres*/
@@ -104,6 +176,9 @@ body{
 /*Seccion de personal*/
 .equipo{
     background-color: antiquewhite;
+}
+.equipo h2{
+    margin-bottom: 40px;
 }
 .equipo-container{
     display: flex;
@@ -124,8 +199,9 @@ body{
 
 /*Estilos del pie de pagina*/
 footer{
-    background-color: rgb(182, 155, 124);
-    color:rgb(235, 235, 235);
+    background-color:  #898969;
+    color:antiquewhite;
     text-align: center;
     padding: 10px 0;
+
 }
