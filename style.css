@@ -254,15 +254,15 @@ body{
   .reseñas h2{
     margin-bottom: 60px;
   }
-  .gallery-container:hover{
-    transform: scale(1.04);/* Agrandar al pasar el cursor */
-  }
   .gallery-item {
     background-color: #f6f2e9;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.312);
+  }
+  .gallery-item:hover{
+    transform: scale(1.04);/* Agrandar al pasar el cursor */
   }
   .gallery-item  .foto{
     width: 60%;
@@ -350,7 +350,7 @@ footer{
 }
 .sandwich{
     border-radius: 20px;
-    background-color: #a99276;
+    background-color: #bba289;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
@@ -388,7 +388,7 @@ footer{
 }
 .bebida{
     border-radius: 20px;
-    background-color: #a99276;
+    background-color: #bba289;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
