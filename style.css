@@ -241,30 +241,41 @@ body{
 .gallery-container {
 
     display: grid;
-  
-    grid-template-columns: repeat(2, 1fr);/* Para saber como fraccionar el grid*/
-  
-    gap: 15px;/*Espacio entre cajas*/
+    grid-template-columns: repeat(4, 1fr);/* Para saber como fraccionar el grid*/
+    gap: 18px;/*Espacio entre cajas*/
   
   }
   .reseñas{
     text-align: center;
-    margin-bottom: 60px;
+    padding:  50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.09);
+    transition: transform 1s ease, background-color 0.3s ease; 
   }
   .reseñas h2{
     margin-bottom: 60px;
   }
-  .gallery-item {
-  
-    background-color: #f0f0f0;
-  
-    padding: 20px;
-  
-    text-align: center;
-  
-    border-radius: 8px;
-  
+  .gallery-container:hover{
+    transform: scale(1.04);/* Agrandar al pasar el cursor */
   }
+  .gallery-item {
+    background-color: #f6f2e9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.312);
+  }
+  .gallery-item  .foto{
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+ 
+  .estrellas img{
+   align-items: center;
+   width: 20px;
+  }
+  
 
 .video{
     display: flex;
@@ -335,10 +346,11 @@ footer{
     gap: 20px; /*Espaciado entre cajitas*/
     grid-template-areas: 
     "sandwich1 sandwich1 sandwich2 sandwich3"
-    "sandwich1 sandwich1 sandwichPollo sandwich5";
+    "sandwich6 sandwich6 sandwich4 sandwich5";
 }
 .sandwich{
-    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: #a99276;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
@@ -347,13 +359,57 @@ footer{
     height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 /*Asignar areas a los sandwiches*/ 
 .sandwich:nth-child(1) {grid-area: sandwich1;}
 .sandwich:nth-child(2) {grid-area: sandwich2;}
 .sandwich:nth-child(3) {grid-area: sandwich3;}
-.sandwich:nth-child(4) {grid-area: sandwichPollo;}
+.sandwich:nth-child(4) {grid-area: sandwich4;}
 .sandwich:nth-child(5) {grid-area: sandwich5;}
+.sandwich:nth-child(6) {grid-area: sandwich6;}
+
+.bebidas{
+    padding: 50px;
+    text-align: center;
+}
+.bebidas h2{
+    margin-bottom: 20px;
+}
+.grid-bebidas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*4 Columnas de igual tamaño*/
+    grid-template-rows: repeat(3, 260px);/*2 Filas de 250px*/
+    gap: 20px; /*Espaciado entre cajitas*/
+    grid-template-areas: 
+    "bebida1 bebida2 bebida3 bebida3"
+    "bebida4 bebida5 bebida3 bebida3"
+    "bebida9 bebida8 bebida7 bebida6";
+}
+.bebida{
+    border-radius: 20px;
+    background-color: #a99276;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.bebida img{
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+/*Asignar areas a los sandwiches*/ 
+.bebida:nth-child(1) {grid-area: bebida1;}
+.bebida:nth-child(2) {grid-area: bebida2;}
+.bebida:nth-child(3) {grid-area: bebida3;}
+.bebida:nth-child(4) {grid-area: bebida4;}
+.bebida:nth-child(5) {grid-area: bebida5;}
+.bebida:nth-child(6) {grid-area: bebida6;}
+.bebida:nth-child(7) {grid-area: bebida7;}
+.bebida:nth-child(8) {grid-area: bebida8;}
+.bebida:nth-child(9) {grid-area: bebida9;}
+
 
 
 @media screen and (max-width: 768px){
