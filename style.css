@@ -342,7 +342,7 @@ footer{
 .grid-sandwich{
     display: grid;
     grid-template-columns: repeat(4, 1fr); /*4 Columnas de igual tamaño*/
-    grid-template-rows: repeat(2, 260px);/*2 Filas de 250px*/
+    grid-template-rows: repeat(2, 300px);/*2 Filas de 250px*/
     gap: 20px; /*Espaciado entre cajitas*/
     grid-template-areas: 
     "sandwich1 sandwich1 sandwich2 sandwich3"
@@ -354,12 +354,17 @@ footer{
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+.sandwich:hover{
+    transform: scale(1.04);/* Agrandar al pasar el cursor */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.762);
+}
 .sandwich img{
     width: 100%;
     height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
     border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 /*Asignar areas a los sandwiches*/ 
 .sandwich:nth-child(1) {grid-area: sandwich1;}
@@ -379,7 +384,7 @@ footer{
 .grid-bebidas{
     display: grid;
     grid-template-columns: repeat(4, 1fr); /*4 Columnas de igual tamaño*/
-    grid-template-rows: repeat(3, 260px);/*2 Filas de 250px*/
+    grid-template-rows: repeat(3, 350px);/*2 Filas de 350px*/
     gap: 20px; /*Espaciado entre cajitas*/
     grid-template-areas: 
     "bebida1 bebida2 bebida3 bebida3"
@@ -392,13 +397,24 @@ footer{
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+.bebida:hover{
+    transform: scale(1.04);/* Agrandar al pasar el cursor */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.762);
+}
 .bebida img{
     width: 80%;
     height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
     border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+#especial{
+    width: 80%;
+    object-fit: cover;
+    height: 500px;
+}
+
 /*Asignar areas a los sandwiches*/ 
 .bebida:nth-child(1) {grid-area: bebida1;}
 .bebida:nth-child(2) {grid-area: bebida2;}
