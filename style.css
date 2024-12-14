@@ -133,11 +133,15 @@ body{
 }
 .bot a{
      text-decoration: none;
-     color: rgb(250, 223, 211);
+     color: rgb(255, 246, 243);
 }
 .bot:hover{
     background-color: #a49c7f;
     transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.462);
+}
+.bot a:hover{
+    color: #1f1a15;
 }
 .featured-products, .postres, .equipo{
     padding: 60px;
@@ -160,7 +164,8 @@ body{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .product:hover{
-     transform: scale(1.2);/* Agrandar al pasar el cursor */
+     transform: scale(1.1);/* Agrandar al pasar el cursor */
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.762);
 }
 .product img{
     width:70%;
@@ -176,12 +181,14 @@ body{
     background-color:  #bba289;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    padding-bottom: 10px;
 }
 .postres{
     background-color: #bba289;
+    transition: transform 1s ease, background-color 0.3s ease; 
 }
 .postres h2{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /*Seccion de postres*/
@@ -190,16 +197,30 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*Responsive*/
     gap: 30px; /*espaciado*/
 }
-
+.postre{
+    background-color: #e4e4d3;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.356);
+}
 .postre img{
-    width: 100%;
+    width: 80%;
     height: 200px;
     object-fit: cover;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.493);
+}
+.postre p{
+    font-size: 14px;
+    margin: 10px 30px 10px 30px;
+}
+.postre h3:hover{
+    transform: scale(1.1);/* Agrandar al pasar el cursor */
 }
 
 /*Seccion de personal*/
 .equipo h2{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .equipo-container{
     display: flex;
@@ -214,7 +235,46 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.312);
     object-fit: cover;
+}
+.gallery-container {
+
+    display: grid;
+  
+    grid-template-columns: repeat(2, 1fr);/* Para saber como fraccionar el grid*/
+  
+    gap: 15px;/*Espacio entre cajas*/
+  
+  }
+  .reseñas{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .reseñas h2{
+    margin-bottom: 60px;
+  }
+  .gallery-item {
+  
+    background-color: #f0f0f0;
+  
+    padding: 20px;
+  
+    text-align: center;
+  
+    border-radius: 8px;
+  
+  }
+
+.video{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.video iframe{
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.762);
+    border-radius: 20px;
 }
 
 
